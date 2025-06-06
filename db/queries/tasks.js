@@ -1,4 +1,4 @@
-import db from "./db/client.js";
+import db from "#db/client";
 
 export async function createTask({ title, done, user_id }) {
     const sql = `

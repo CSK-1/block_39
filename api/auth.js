@@ -13,7 +13,7 @@ router.post("/users/register", async (req, res, next) => {
 		return res.status(400).send("Missing required info.")};
 	const newUser = await createUser({
 		username,
-		password: await bcrypt.hash(password, 5)
+		password
 	});
     if (!newUser){
         return res.status(401).send("Couldn't register new user.")

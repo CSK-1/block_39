@@ -1,4 +1,5 @@
 import db from "#db/client";
+import bcrypt from 'bcrypt'
 
 import { createTask } from "./queries/tasks.js";
 import { createUser } from "./queries/users.js";
